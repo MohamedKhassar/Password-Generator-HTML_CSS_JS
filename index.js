@@ -58,7 +58,7 @@ function generatePassword() {
     document.querySelector(".password-input").value = result;
     var message = document.querySelector(".message");
     message.innerHTML =
-      "<img src='img/circle-x.svg' alt=''>set your settings before generating!";
+      "<img src='img/circle-x.svg' alt=''>set your settings before generating the password!";
     message.classList.add("error");
   }
 }

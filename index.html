@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="password-card">
+            <h1 class="password-title">password generator</h1>
+            <div class="password">
+                <div>
+                    <input type="text" class="password-input" placeholder="password">
+                    <button class="copy-btn" onclick="copyPassword()"><img src="img/copy.svg" alt=""></button>
+                </div>
+                <p class="message"></p>
+            </div>
+            <div class="password-settings">
+                <div class="password-length">
+                    <div class="password-label">
+                        <label id="password-label">password length</label>
+                        <span id="password-range"></span>
+                    </div>
+                    <input type="range" oninput="fillRange()" onchange="fillRange()" name="password-length" id="password-length" min="8" max="20" value="8">
+                </div>
+                <div class="password-chars">
+                    <div class="chars-item">
+                        <input type="checkbox" name="" id="upper">
+                        <label for="upper">include uppercase letters</label>
+                    </div>
+                    <div class="chars-item">
+                        <input type="checkbox" name="" id="lower">
+                        <label for="lower">include lowercase letters</label>
+                    </div>
+                    <div class="chars-item">
+                        <input type="checkbox" name="" id="number">
+                        <label for="number">include numbers</label>
+                    </div>
+                    <div class="chars-item">
+                        <input type="checkbox" name="" id="sym">
+                        <label for="sym">include symbols</label>
+                    </div>
+                </div>
+                <button class="password-generator" onclick="generatePassword()">generate password</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

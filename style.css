@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #19A1D0, #000B54);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.password-title {
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    color: #160628;
+    text-transform: capitalize;
+}
+
+.password-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.password-settings, .password {
+    background: #160628;
+    padding: 40px 50px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 0px 7px 1px #58077D;
+}
+
+.password-settings {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.password div {
+    display: flex;
+}
+
+.password-input {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 8px;
+    border: 0;
+    background: transparent;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    outline: 0;
+    color: gray;
+    font-size: 20px;
+}
+
+.password-input::placeholder {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: "Poppins";
+}
+
+.copy-btn {
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+}
+
+.password-label {
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: "Poppins";
+    display: flex;
+    justify-content: space-between;
+}
+
+#password-label {
+    color: white;
+}
+
+#password-range {
+    color: #1775D5;
+}
+
+.password-length {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#password-length {
+    height: 28px;
+    margin: 10px 0;
+    appearance: none;
+    background: transparent;
+    width: 100%;
+}
+
+#password-length:focus {
+    outline: none;
+}
+
+#password-length::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 14px;
+    cursor: pointer;
+    animation-delay: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: #74A9D8;
+    border-radius: 5px;
+    border: 0px solid #010101;
+}
+
+#password-length::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000031;
+    border: 0px solid #00001E;
+    height: 22px;
+    width: 21px;
+    border-radius: 31px;
+    background: #E3FFE7;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -4px;
+}
+
+#password-length:focus::-webkit-slider-runnable-track {
+    background: #74A9D8;
+}
+
+#password-length::-moz-range-track {
+    width: 100%;
+    height: 14px;
+    cursor: pointer;
+    animation-delay: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: #74A9D8;
+    border-radius: 5px;
+    border: 0px solid #010101;
+}
+
+#password-length::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #000031;
+    border: 0px solid #00001E;
+    height: 22px;
+    width: 21px;
+    border-radius: 31px;
+    background: #E3FFE7;
+    cursor: pointer;
+}
+
+#password-length::-ms-track {
+    width: 100%;
+    height: 14px;
+    cursor: pointer;
+    animation-delay: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+#password-length::-ms-fill-lower {
+    background: #74A9D8;
+    border: 0px solid #010101;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px #000000;
+}
+
+#password-length::-ms-fill-upper {
+    background: #74A9D8;
+    border: 0px solid #010101;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px #000000;
+}
+
+#password-length::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #000031;
+    border: 0px solid #00001E;
+    height: 22px;
+    width: 21px;
+    border-radius: 31px;
+    background: #E3FFE7;
+    cursor: pointer;
+}
+
+#password-length:focus::-ms-fill-lower {
+    background: #74A9D8;
+}
+
+#password-length:focus::-ms-fill-upper {
+    background: #74A9D8;
+}
+
+.password-chars {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chars-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    
+}
+
+.chars-item input,.chars-item label{
+    cursor: pointer;
+}
+
+.chars-item input[type="checkbox"] {
+    accent-color: #90a0da;
+    size: 60px;
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+.password-generator {
+    background: #E3FFE7;
+    padding: 15px 40px;
+    font-family: "Poppins";
+    font-weight: 900;
+    box-shadow: 0px 5px 1px #1CB5E0;
+    text-transform: capitalize;
+    border-radius: 8px;
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.password-generator:hover{
+    background: #c7fccf;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.error {
+    background: #e33f3f;
+    font-size: 14px;
+    
+}
+
+.success {
+    background: #45c54f;
+}
+
+.success,.error{
+    padding: 15px 10px;
+    color: white;
+    text-transform: capitalize;
+    display: flex !important; 
+    gap: 20px;
+    justify-content: center;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    animation: message .5s ease-in-out;
+    -webkit-animation: message .5s ease-in-out;
+}
+
+.message{
+    display: none;
+}
+
+@keyframes message {
+    0%{
+        opacity: 0;
+        display: none;
+    }
+    100%{
+        opacity: 1;
+        display: flex;
+    }
+}

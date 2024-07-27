@@ -311,3 +311,125 @@ body {
         display: flex;
     }
 }
+
+
+
+@media (max-width: 850px) { 
+    .container{
+        padding: 0px 20px;
+    }
+    .password-title {
+        font-size: 25px;
+    }
+    
+    .password {
+        padding:8px 20px;
+    }
+
+    .password-settings{
+        padding: 20px 20px;
+    }
+    
+    .password-settings {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .password-input {
+        width: 100%;
+        padding: 10px 10px;
+        border-radius: 8px;
+        border: 0;
+        background: transparent;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        outline: 0;
+        color: gray;
+        font-size: 20px;
+    }
+    
+    .password-input::placeholder {
+        font-size: 17px;
+        font-weight: 400;
+    }
+    
+    .copy-btn img{
+width: 24px;
+    }
+    
+    .password-label {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    #password-length::-webkit-slider-runnable-track {
+        height: 10px;
+}
+    
+    #password-length::-webkit-slider-thumb {
+                height: 16px;
+        width: 16px;
+        border-radius: 31px;
+        margin-top: -3px;
+    }
+        
+    .password-chars {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .chars-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        cursor: pointer;
+        color: white;
+        font-size: 16px;
+        text-transform: capitalize;
+        
+    }
+    
+    .chars-item input[type="checkbox"] {
+        accent-color: #90a0da;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
+    
+    .password-generator {
+        padding: 10px 20px;
+        font-weight: 900;
+        font-size: 16px;
+    }
+    
+    .password-generator:hover{
+        background: #c7fccf;
+        transition: all .5s;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -ms-transition: all .5s;
+        -o-transition: all .5s;
+    }
+    
+    .error ,.success{
+        font-size: 8px;
+        
+    }
+
+    .error img ,.success img{
+        width: 15px;
+    }
+    
+    .success,.error{
+        padding: 10px 5px;
+        gap: 8px;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+}
